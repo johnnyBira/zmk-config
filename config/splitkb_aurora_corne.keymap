@@ -49,7 +49,7 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp SE_EXCL &kp SE_AT &kp SE_HASH &kp SE_DLLR &kp SE_PRCNT   &kp SE_CARET &kp SE_AMPS  &kp SE_KP_MULTIPLY &kp SE_LPAR &kp SE_RPAR &kp BSPC
+   &kp  TAB  &kp SE_EXCL &kp SE_AT &kp SE_HASH &kp SE_DLLR &kp SE_PRCNT   &kp SE_CARET &kp SE_AMPS  &kp KP_MULTIPLY &kp SE_LPAR &kp SE_RPAR &kp BSPC
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp SE_MINUS &kp SE_EQUAL &kp SE_LBKT        &kp SE_RBKT &kp SE_BSLH &kp SE_GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp SE_UNDER &kp SE_PLUS  &kp SE_LBRC        &kp SE_RBRC &kp SE_PIPE &kp SE_TILDE
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
