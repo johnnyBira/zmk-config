@@ -31,8 +31,8 @@
                 };
                 swerty_layer {
                         bindings = <
-   &kp TAB        &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &trans           SE_A_RING
-   &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          SE_O_umlaut      sE_AE
+   &kp TAB        &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &trans           &kb SE_A_RING
+   &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &kb SE_O_UMLAUT  &kb SE_AE
    &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &trans           &trans  
                                               &trans        &trans        &trans            &trans          &trans           &trans 
 
