@@ -60,7 +60,7 @@
 
                 raise_layer {
                         bindings = <
-   &kp  tab     &kp se_excl    &kp se_at    &kp se_hash    &kp se_dllr    &kp se_prcnt      &kp se_caret    &kp se_amps     &kp kp_multiply    &kp se_lpar    &kp se_rpar    &kp bspc
+   &kp tab      &kp se_excl    &kp se_at    &kp se_hash    &kp se_dllr    &kp se_prcnt      &kp se_caret    &kp se_amps     &kp kp_multiply    &kp se_lpar    &kp se_rpar    &kp bspc
    &kp lctrl    &trans         &trans       &trans         &trans         &trans            &kp se_minus    &kp se_equal    &kp se_lbkt        &kp se_rbkt    &kp se_bslh    &kp se_grave
    &sk lshft    &trans         &trans       &trans         &trans         &trans            &kp se_under    &kp se_plus     &kp se_lbrc        &kp se_rbrc    &kp se_pipe    &kp se_tilde
                     	                    &kp lgui       &trans         &kp space         &kp ret         &trans          &kp ralt
