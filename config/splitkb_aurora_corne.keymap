@@ -51,27 +51,27 @@
                 };
                 lower_layer {
                         bindings = <
-   &kp TAB      &kp SE_N1      &kp SE_N2      &kp SE_N3     &kp SE_N4     &kp SE_N5         &kp SE_N7       &kp SE_N8       &kp SE_N9          &kp SE_N9       &kp SE_N0        &kp BSPC
-   &kp LCTRL    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp SE_N4       &kp SE_N5       &kp SE_N6          &kp RIGHT       &trans           &trans
-   &sk LSHFT    &bt BT_CLR     &trans         &tog SWERTY   &trans        &trans            &kp SE_N1       &kp SE_N2       &kp SE_N3             &trans          &trans           &trans
+   &trans       &trans         &trans         &trans        &trans        &trans            &kp SE_N7       &kp SE_N8       &kp SE_N9          &kp SE_N9      &trans         &kp BSPC
+   &trans       &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp SE_N4       &kp SE_N5       &kp SE_N6          &kp RIGHT      &trans         &trans
+   &sk LSHFT    &bt BT_CLR     &trans         &tog SWERTY   &trans        &trans            &kp SE_N1       &kp SE_N2       &kp SE_N3          &trans         &trans         &trans
                           	              &kp LGUI      &trans        &kp SPACE         &kp RET         &trans          &kp RALT
                         >;
                 };
 
                 raise_layer {
                         bindings = <
-   &kp tab      &kp se_excl    &kp se_at    &kp se_hash    &kp se_dllr    &kp se_prcnt      &kp se_caret    &kp se_amps     &kp kp_multiply    &kp se_lpar    &kp se_rpar    &kp bspc
-   &kp lctrl    &trans         &trans       &trans         &trans         &trans            &kp se_minus    &kp se_equal    &kp se_lbkt        &kp se_rbkt    &kp se_bslh    &kp se_grave
-   &sk lshft    &trans         &trans       &trans         &trans         &trans            &kp se_under    &kp se_plus     &kp se_lbrc        &kp se_rbrc    &kp se_pipe    &kp se_tilde
-                    	                    &kp lgui       &trans         &kp space         &kp ret         &trans          &kp ralt
+   &kp TAB      &kp SE_EXCL    &kp SE_AT    &kp SE_HASH    &kp SE_DLLR    &kp SE_PRCNT      &kp SE_CARET    &kp SE_AMPS     &kp KP_MULTIPLY    &kp SE_LPAR    &kp SE_RPAR    &kp BSPC
+   &kp lctrl    &trans         &trans       &trans         &trans         &trans            &kp SE_MINUS    &kp SE_EQUAL    &kp SE_LBKT        &kp SE_RBKT    &kp SE_BSLH    &kp SE_GRAVE
+   &sk lshft    &trans         &trans       &trans         &trans         &trans            &kp SE_UNDER    &kp SE_PLUS     &kp SE_LBRC        &kp SE_RBRC    &kp SE_PIPE    &kp SE_TILDE
+                    	                    &kp LGUI       &trans         &kp SPACE         &kp RET         &trans          &kp RALT
                         >;
                 };
                 misc_layer {
                         bindings = <
-   &kp  tab     &kp se_excl    &kp se_at    &kp se_hash    &kp se_dllr    &kp se_prcnt      &kp se_caret    &kp se_amps     &kp kp_multiply    &kp se_lpar    &kp se_rpar    &kp bspc
-   &kp lctrl    &trans         &trans       &trans         &trans         &trans            &kp se_minus    &kp C_VOL_UP    &kp se_lbkt        &kp se_rbkt    &kp se_bslh    &kp se_grave
-   &sk lshft    &trans         &trans       &trans         &trans         &trans            &kp se_under    &kp se_plus     &kp se_lbrc        &kp se_rbrc    &kp se_pipe    &kp se_tilde
-                    	                    &kp lgui       &trans         &kp space         &kp ret         &trans          &kp ralt
+   &kp TAB      &kp SE_EXCL    &kp SE_AT    &kp SE_HASH    &kp SE_DLLR    &kp SE_PRCNT      &kp SE_CARET    &kp SE_AMPS     &kp KP_MULTIPLY    &kp SE_LPAR    &kp SE_RPAR    &kp BSPC
+   &kp lctrl    &trans         &trans       &trans         &trans         &trans            &kp SE_MINUS    &kp C_VOL_UP    &kp SE_LBKT        &kp SE_RBKT    &kp SE_BSLH    &kp SE_GRAVE
+   &sk lshft    &trans         &trans       &trans         &trans         &trans            &kp SE_UNDER    &kp SE_PLUS     &kp SE_LBRC        &kp SE_RBRC    &kp SE_PIPE    &kp SE_TILDE
+                    	                    &kp LGUI       &trans         &kp SPACE         &kp RET         &trans          &kp RALT
                         >;
                 };
         };
