@@ -44,7 +44,7 @@
    &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &trans           &kp SE_A_RING
    &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &kp SE_O_UMLAUT  &kp SE_A_UMLAUT
    &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &trans           &trans  
-                                              jtrans        &trans        &trans            &trans          &trans           &trans 
+                                              &trans        &trans        &trans            &trans          &trans           &trans 
 
 
                         >;
@@ -71,7 +71,7 @@
    &trans       &trans         &trans         &trans        &trans        &trans            &kp SE_CARET    &kp SE_AMPS     &kp KP_MULTIPLY    &kp SE_LPAR    &kp SE_RPAR    &kp BSPC
    &trans       &bt BT_SEL 9   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp SE_MINUS    &kp C_VOL_DOWN  &kp C_VOL_UP       &kp SE_RBKT    &kp SE_BSLH    &kp SE_GRAVE
    &sk LSHFT    &bt BT_CLR     &trans         &tog SWERTY   &trans        &trans            &kp SE_UNDER    &kp SE_PLUS     &kp SE_LBRC        &kp SE_RBRC    &kp SE_PIPE    &kp SE_TILDE
-                    	                    &kp LGUI       &trans         &kp SPACE         &kp RET         &trans          &kp RALT
+                    	                      &kp LGUI      &trans        &kp SPACE         &kp RET         &trans          &kp RALT
                         >;
                 };
         };
