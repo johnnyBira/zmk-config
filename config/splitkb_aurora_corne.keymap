@@ -1,4 +1,4 @@
-/*
+/*&bt BT_SEL 1
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -49,21 +49,29 @@
 
                         >;
                 };
+                lower_layer {
+                        bindings = <
+   &trans       &trans          &trans        &trans        &trans        &trans            &kp DELETE      &kp SE_N7        &kp SE_N8        &kp SE_N9        &kp KP_MULTIPLY   &trans
+   &trans       &trans          &trans        &trans        &trans        &trans            &kp SE_EQUAL    &kp SE_N4        &kp SE_N5        &kp SE_N6        &kp SE_MINUS      &trans
+   &trans       &trans          &trans        &trans        &trans        &trans            &kp SE_FSLH     &kp SE_N1        &kp SE_N2        &kp SE_N3        &kp SE_PLUS       &trans
+                    	                      &trans        &trans        &trans            &kp RET         &trans           &kp SE_N0 
+                        >;
+                };
+
                 raise_layer {
                         bindings = <
+   &trans       &kp SE_EXCL     &kp SE_AT     &kp SE_HASH   &kp SE_EURO   &kp SE_PRCNT      &trans          &trans          &trans             &trans         &trans         &trans 
+   &trans       &kp SE_AMPS     &kp SE_SLASH  &kp SE_LPAR   &kp SE_RPAR   &kp SE_EQUAL      &kp LEFT        &kp DOWN        &kp UP             &kp RIGHT      &trans         &trans 
+   &trans       &kp SE_QMARK    &kp SE_GRAVE  &kp SE_CARET  &kp SE_MULTI  &kp SE_BSLH       &trans          &trans          &trans             &trans         &trans         &trans 
+				              &trans        &trans        &kp TAB           &trans          &trans          &trans
+
+
    &trans       &kp DELETE      &kp SE_N7     &kp SE_N8     &kp SE_N9     &kp KP_MULTIPLY   &trans          &trans          &trans             &trans         &trans         &trans
    &trans       &kp SE_EQUAL    &kp SE_N4     &kp SE_N5     &kp SE_N6     &kp SE_MINUS      &kp LEFT        &kp DOWN        &kp UP             &kp RIGHT      &trans         &trans
    &sk LSHFT    &kp SE_FSLH     &kp SE_N1     &kp SE_N2     &kp SE_N3     &kp SE_PLUS       &trans          &trans          &trans             &trans         &trans         &trans
                     	                      &kp SE_N0     &trans        &kp TAB           &kp RET         &trans          &kp RALT
-                        >;
-                };
 
-                lower_layer {
-                        bindings = <
-   &kp TAB      &kp SE_EXCL    &kp SE_AT    &kp SE_HASH    &kp SE_DLLR    &kp SE_PRCNT      &kp SE_CARET    &kp SE_AMPS     &kp KP_MULTIPLY    &kp SE_LPAR    &kp SE_RPAR    &kp BSPC
-   &kp LCTRL    &trans         &trans       &trans         &trans         &trans            &kp SE_MINUS    &kp SE_EQUAL    &kp SE_LBKT        &kp SE_RBKT    &kp SE_BSLH    &kp SE_GRAVE
-   &sk LSHFT    &trans         &trans       &trans         &trans         &trans            &kp SE_UNDER    &kp SE_PLUS     &kp SE_LBRC        &kp SE_RBRC    &kp SE_PIPE    &kp SE_TILDE
-					    &kp SE_N0      &trans         &kp SPACE         &kp RET         &trans          &trans
+
                         >;
                 };
                 misc_layer {
