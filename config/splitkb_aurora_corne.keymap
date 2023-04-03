@@ -54,14 +54,6 @@
    &trans       &kp SE_AMPS     &kp SE_SLASH  &kp SE_LPAR   &kp SE_RPAR   &kp SE_EQUAL      &kp LEFT        &kp DOWN        &kp UP             &kp RIGHT      &trans         &trans 
    &trans       &kp SE_QMARK    &kp SE_GRAVE  &kp SE_CARET  &kp SE_MULTI  &kp SE_BSLH       &trans          &trans          &trans             &trans         &trans         &trans 
 				              &trans        &trans        &kp TAB           &trans          &trans          &trans
-
-
-   &trans       &kp DELETE      &kp SE_N7     &kp SE_N8     &kp SE_N9     &kp KP_MULTIPLY   &trans          &trans          &trans             &trans         &trans         &trans
-   &trans       &kp SE_EQUAL    &kp SE_N4     &kp SE_N5     &kp SE_N6     &kp SE_MINUS      &kp LEFT        &kp DOWN        &kp UP             &kp RIGHT      &trans         &trans
-   &sk LSHFT    &kp SE_FSLH     &kp SE_N1     &kp SE_N2     &kp SE_N3     &kp SE_PLUS       &trans          &trans          &trans             &trans         &trans         &trans
-                    	                      &kp SE_N0     &trans        &kp TAB           &kp RET         &trans          &kp RALT
-
-
                         >;
                 };
 
