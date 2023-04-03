@@ -32,8 +32,8 @@
                 default_layer {
                         bindings = <
    &kp TAB        &kp SE_Q      &kp SE_W      &kp SE_E      &kp SE_R      &kp SE_T          &kp SE_Y        &kp SE_U         &kp SE_I          &kp SE_O        &kp SE_P         &kp BSPC
-   &kp LCTRL      &kp SE_A      &kp SE_S      &kp SE_D      &kp SE_F      &kp SE_G          &kp SE_H        &kp SE_J         &kp SE_K          &kp SE_L        &kp SE_SEMI      &kp SE_SQT
-   &sk LSHFT      &kp SE_Z      &kp SE_X      &kp SE_C      &kp SE_V      &kp SE_B          &kp SE_N        &kp SE_M         &kp SE_COMMA      &kp SE_DOT      &kp SE_MINUS     &kp ESC
+   &sk LSHFT      &kp SE_A      &kp SE_S      &kp SE_D      &kp SE_F      &kp SE_G          &kp SE_H        &kp SE_J         &kp SE_K          &kp SE_L        &kp SE_SEMI      &kp SE_SQT
+   &kp LCTRL      &kp SE_Z      &kp SE_X      &kp SE_C      &kp SE_V      &kp SE_B          &kp SE_N        &kp SE_M         &kp SE_COMMA      &kp SE_DOT      &kp SE_MINUS     &kp ESC
                                               &kp LGUI      &mo RAISE     &kp BSPC          &kp SPACE       &mo LOWER        &kp RALT
 
 
