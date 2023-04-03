@@ -10,10 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define SWERTY 1
-#define LOWER 2
-#define RAISE 3
-#define MISC 4
+#define LOWER 1
+#define RAISE 2
+#define MISC 3
 
 / {
     conditional_layers {
@@ -31,24 +30,15 @@
 
                 default_layer {
                         bindings = <
-   &kp TAB        &kp SE_Q      &kp SE_W      &kp SE_E      &kp SE_R      &kp SE_T          &kp SE_Y        &kp SE_U         &kp SE_I          &kp SE_O        &kp SE_P         &kp BSPC
-   &sk LSHFT      &kp SE_A      &kp SE_S      &kp SE_D      &kp SE_F      &kp SE_G          &kp SE_H        &kp SE_J         &kp SE_K          &kp SE_L        &kp SE_SEMI      &kp SE_SQT
-   &sk LCTRL      &kp SE_Z      &kp SE_X      &kp SE_C      &kp SE_V      &kp SE_B          &kp SE_N        &kp SE_M         &kp SE_COMMA      &kp SE_DOT      &kp SE_MINUS     &kp ESC
+   &kp ESC        &kp SE_Q      &kp SE_W      &kp SE_E      &kp SE_R      &kp SE_T          &kp SE_Y        &kp SE_U         &kp SE_I          &kp SE_O        &kp SE_P         &kp SE_A_RING 
+   &sk LSHFT      &kp SE_A      &kp SE_S      &kp SE_D      &kp SE_F      &kp SE_G          &kp SE_H        &kp SE_J         &kp SE_K          &kp SE_L        &kp SE_O_UMLAUT  &kp SE_A_UMLAUT 
+   &sk LCTRL      &kp SE_Z      &kp SE_X      &kp SE_C      &kp SE_V      &kp SE_B          &kp SE_N        &kp SE_M         &kp SE_COMMA      &kp SE_DOT      &kp SE_MINUS     &kp SE_TILDE
                                               &kp LGUI      &mo RAISE     &kp BSPC          &kp SPACE       &mo LOWER        &kp RALT
 
 
                         >;
                 };
-                swerty_layer {
-                        bindings = <
-   &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &trans           &kp SE_A_RING
-   &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &kp SE_O_UMLAUT  &kp SE_A_UMLAUT
-   &trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans           &trans            &trans          &trans           &trans  
-                                              &trans        &trans        &trans            &trans          &trans           &trans 
 
-
-                        >;
-                };
                 lower_layer {
                         bindings = <
    &trans       &trans          &trans        &trans        &trans        &trans            &kp DELETE      &kp SE_N7        &kp SE_N8        &kp SE_N9        &kp KP_MULTIPLY   &trans
@@ -74,6 +64,7 @@
 
                         >;
                 };
+
                 misc_layer {
                         bindings = <
    &trans       &trans         &trans         &trans        &trans        &trans            &trans          &kp C_PP        &trans             &trans         &trans         &trans     
