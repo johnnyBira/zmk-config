@@ -50,10 +50,10 @@
 
                 raise_layer {
                         bindings = <
-   &trans       &kp SE_EXCL     &kp SE_AT     &kp SE_HASH   &kp SE_EURO   &kp SE_PRCNT      &trans          &trans          &trans             &trans         &trans         &trans 
-   &trans       &kp SE_AMPS     &kp SE_SLASH  &kp SE_LPAR   &kp SE_RPAR   &kp SE_EQUAL      &kp LEFT        &kp DOWN        &kp UP             &kp RIGHT      &trans         &trans 
-   &trans       &kp SE_QMARK    &kp SE_GRAVE  &kp SE_CARET  &kp SE_MULTI  &kp SE_BSLH       &trans          &trans          &trans             &trans         &trans         &trans 
-				              &trans        &trans        &kp TAB           &trans          &trans          &trans
+   &trans       &kp SE_EXCL     &kp SE_AT     &kp SE_HASH   &kp SE_EURO        &kp SE_PRCNT      &trans          &trans          &trans             &trans         &trans             &trans 
+   &trans       &kp SE_AMPS     &kp SE_SLASH  &kp SE_LPAR   &kp SE_RPAR        &kp SE_EQUAL      &kp LEFT        &kp DOWN        &kp UP             &kp RIGHT      &trans             &trans 
+   &trans       &kp SE_QMARK    &kp SE_GRAVE  &kp SE_CARET  &kp KP_MULTIPLY    &kp SE_BSLH       &trans          &trans          &trans             &trans         &trans             &trans 
+				              &trans        &trans             &kp TAB           &trans          &trans          &trans
                         >;
                 };
 
