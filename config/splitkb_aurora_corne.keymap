@@ -32,7 +32,7 @@
                         bindings = <
    &kp TAB        &kp SE_Q      &kp SE_W      &kp SE_E      &kp SE_R      &kp SE_T          &kp SE_Y        &kp SE_U         &kp SE_I          &kp SE_O        &kp SE_P         &kp SE_A_RING 
    &kp LSHFT      &kp SE_A      &kp SE_S      &kp SE_D      &kp SE_F      &kp SE_G          &kp SE_H        &kp SE_J         &kp SE_K          &kp SE_L        &kp SE_O_UMLAUT  &kp SE_A_UMLAUT 
-   &kp LCTRL      &kp SE_Z      &kp SE_X      &kp SE_C      &kp SE_V      &kp SE_B          &kp SE_N        &kp SE_M         &kp SE_COMMA      &kp SE_DOT      &kp SE_MINUS     &kp SE_TILDE
+   &kp LCTRL      &kp SE_Z      &kp SE_X      &kp SE_C      &kp SE_V      &kp SE_B          &kp SE_N        &kp SE_M         &kp SE_COMMA      &kp SE_DOT      &kp SE_MINUS     &kp ESC
                                               &kp LGUI      &mo LOWER     &kp BSPC          &kp SPACE       &mo RAISE        &kp RALT
 
 
@@ -41,8 +41,8 @@
 
                 lower_layer {
                         bindings = <
-   &trans       &trans          &trans        &trans        &trans        &trans            &kp DELETE      &kp SE_N7        &kp SE_N8        &kp SE_N9        &kp KP_MULTIPLY   &trans
-   &trans       &trans          &trans        &trans        &trans        &trans            &kp SE_EQUAL    &kp SE_N4        &kp SE_N5        &kp SE_N6        &kp SE_MINUS      &trans
+   &trans       &trans          &trans        &trans        &trans        &trans            &kp DELETE      &kp SE_N7        &kp SE_N8        &kp SE_N9        &kp KP_MULTIPLY   &kp SE_UMLAUT
+   &trans       &trans          &trans        &trans        &trans        &trans            &kp SE_EQUAL    &kp SE_N4        &kp SE_N5        &kp SE_N6        &kp SE_MINUS      &kp SE_APOS
    &trans       &trans          &trans        &trans        &trans        &trans            &kp SE_FSLH     &kp SE_N1        &kp SE_N2        &kp SE_N3        &kp SE_PLUS       &trans
                     	                      &trans        &trans        &trans            &kp RET         &trans           &kp SE_N0 
                         >;
