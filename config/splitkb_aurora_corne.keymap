@@ -17,15 +17,7 @@
 #define RAISE 2
 #define MISC 3
 
-/ {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <MISC>;
-        };
-    };
-};
+ZMK_CONDITIONAL_LAYER(LOWER RAISE, MISC)
 
 ZMK_KEYMAP(default_layer,
    &kp TAB        &kp SE_Q      &kp SE_W      &kp SE_E      &kp SE_R      &kp SE_T          &kp SE_Y        &kp SE_U         &kp SE_I          &kp SE_O        &kp SE_P         &kp SE_A_RING 
