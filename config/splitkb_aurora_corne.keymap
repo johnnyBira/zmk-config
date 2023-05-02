@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "../zmk-nodefree-config/helper.h"
-
+#include "../zmk-nodefree-config/keypos_def/keypos_42keys.h"
 
 #define DEFAULT 0
 #define LOWER 1
@@ -19,9 +19,35 @@
 
 ZMK_CONDITIONAL_LAYER(LOWER RAISE, MISC)
 
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left-hand keys
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right-hand keys
+#define THUMBS LH0 LH1 LH2 RH0 RH1 RH2
+
+/* left-hand HRMs */
+ZMK_BEHAVIOR(hml, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;             // delay positional check until key-release
+)
+
+/* right-hand HRMs */
+ZMK_BEHAVIOR(hmr, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;                // repeat on tap-into-hold
+    global-quick-tap;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;             // delay positional check until key-release
+)
+
 ZMK_LAYER(default_layer,
    &kp TAB        &kp SE_Q      &kp SE_W      &kp SE_E      &kp SE_R      &kp SE_T          &kp SE_Y        &kp SE_U         &kp SE_I          &kp SE_O        &kp SE_P         &kp SE_A_RING 
-   &kp LCTRL      &kp SE_A      &kp SE_S      &kp SE_D      &kp SE_F      &kp SE_G          &kp SE_H        &kp SE_J         &kp SE_K          &kp SE_L        &kp SE_O_UMLAUT  &kp SE_A_UMLAUT 
+   &kp LCTRL      &hml LSFT SE_A    &hml LGUI SE_S    &hml LALT SE_D    &hml LCTL SE_F          &hmr LSFT SE_A    &hmr LGUI SE_S    &hmr LALT SE_D    &hmr LCTL SE_F        &kp SE_O_UMLAUT  &kp SE_A_UMLAUT 
    &kp LSHFT      &kp SE_Z      &kp SE_X      &kp SE_C      &kp SE_V      &kp SE_B          &kp SE_N        &kp SE_M         &kp SE_COMMA      &kp SE_DOT      &kp SE_MINUS     &kp ESC
                                               &kp LGUI      &mo LOWER     &kp BSPC          &kp SPACE       &mo RAISE        &kp RALT
 )
