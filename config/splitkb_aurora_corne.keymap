@@ -47,7 +47,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
 ZMK_LAYER(default_layer,
    &kp TAB        &kp SE_Q          &kp SE_W          &kp SE_E          &kp SE_R          &kp SE_T          &kp SE_Y          &kp SE_U          &kp SE_I          &kp SE_O          &kp SE_P                &kp SE_A_RING
-   &kp LCTRL      &hml LSFT SE_A    &hml LGUI SE_S    &hml LALT SE_D    &hml LCTL SE_F    &kp SE_G          &kp SE_H          &hmr RSFT SE_J    &hmr RGUI SE_K    &hmr RALT SE_L    &hmr RCTL SE_O_UMLAUT   &kp SE_A_UMLAUT
+   &kp LCTRL      &hml LGUI SE_A    &hml LALT SE_S    &hml LCTL SE_D    &hml LSFT SE_F    &kp SE_G          &kp SE_H          &hmr RSFT SE_J    &hmr LCTL SE_K    &hmr RALT SE_L    &hmr RGUI SE_O_UMLAUT   &kp SE_A_UMLAUT
    &kp LSHFT      &kp SE_Z          &kp SE_X          &kp SE_C          &kp SE_V          &kp SE_B          &kp SE_N          &kp SE_M          &kp SE_COMMA      &kp SE_DOT        &kp SE_MINUS            &kp ESC
                                                       &kp LGUI          &mo LOWER         &kp BSPC          &kp SPACE         &mo RAISE         &kp RALT
 )
