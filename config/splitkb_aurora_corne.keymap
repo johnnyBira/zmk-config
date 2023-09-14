@@ -19,7 +19,7 @@
 #define SYMBOLS 4
 #define MISC 5
 
-ZMK_CONDITIONAL_LAYER(NUMBER NAVIGATION, MISC)
+ZMK_CONDITIONAL_LAYER(NUMBER SYMBOLS, MISC)
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left-hand keys
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right-hand keys
@@ -55,7 +55,7 @@ ZMK_LAYER(default,
 // ├─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────┤   ├─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────┤
       &kp LESS_THAN             &kp SE_Z                  &kp SE_X                  &kp SE_C                  &kp SE_V                  &kp SE_B                    &kp SE_N                  &kp SE_M                  &kp SE_COMMA              &kp SE_DOT                &kp SE_MINUS              &kp ESC
 // ╰─────────────────────────┴─────────────────────────┴─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────╮   ╭─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┴─────────────────────────┴───────────────────────╯
-                                                                                    &kp ESC                   &mo NUMBER                &lt NAVIGATION BSPC         &kp SPACE                 &kp TAB                   &kp ENTER
+                                                                                    &kp ESC                   &mo NUMBER                &lt NAVIGATION BSPC         &kp SPACE                 &lt SYMBOLS &kp TAB       kk&kp ENTER
 //                                                                               ╰─────────────────────────┴─────────────────────────┴───────────────────────╯   ╰─────────────────────────┴─────────────────────────┴─────────────────────────╯
 )
 
