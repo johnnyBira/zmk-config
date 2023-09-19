@@ -1,7 +1,7 @@
 /*
  * Localized Keys for Swedish
  *
- * This file was generated from data with the following license:
+ * This file was generated from data with the folloing license:
  *
  * Copyright (c) 2023 The ZMK Contributors
  * 
@@ -35,7 +35,7 @@
 #define SE_POUND (SE_HASH)
 
 /* $ */
-#define SE_DOLLAR (LA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_4_AND_DOLLAR)))
+#define SE_DOLLAR LA(SE_N4)
 #define SE_DLLR (SE_DOLLAR)
 
 /* % */
@@ -135,7 +135,7 @@
 #define SE_QMARK (SE_QUESTION)
 
 /* @ */
-#define SE_AT_SIGN (LA(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE)))
+#define SE_AT_SIGN (LA(SE_N2))
 #define SE_AT (SE_AT_SIGN)
 
 /* [ */
@@ -226,7 +226,7 @@
 /* v */
 #define SE_V (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_V))
 
-/* w */
+/*  */
 #define SE_W (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_W))
 
 /* x */
