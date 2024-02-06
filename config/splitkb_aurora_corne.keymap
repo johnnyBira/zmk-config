@@ -31,7 +31,7 @@ ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    global-quick-tap;
+    require-prior-idle-ms = <150>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
     hold-trigger-on-release;             // delay positional check until key-release
@@ -42,13 +42,12 @@ ZMK_BEHAVIOR(hmr, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;                // repeat on tap-into-hold
-    global-quick-tap;
+    require-prior-idle-ms = <150>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;             // delay positional check until key-release
-)
+)ZMK_LAYER(default,
 
-ZMK_LAYER(default,
 // ╭─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┬───────────────────────╮   ╭─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┬───────────────────────╮
       &tog SWERTY               &kp SE_Q                  &kp SE_W                  &kp SE_E                  &kp SE_R                  &kp SE_T                    &kp SE_Y                  &kp SE_U                  &kp SE_I                  &kp SE_O                  &kp SE_P                  &kp SE_CARET
 // ├─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────┤   ├─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────┤
