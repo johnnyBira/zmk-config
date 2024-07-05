@@ -27,6 +27,11 @@ ZMK_CONDITIONAL_LAYER(NUMBER SYMBOLS, MISC)
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right-hand keys
 #define THUMBS LH0 LH1 LH2 RH0 RH1 RH2
 
+#define RHYPER RS(RC(RA(LGUI)))
+#define LHYPER LS(LC(LA(RGUI)))
+#define RMEH RS(RC(RALT))
+#define LMEH LS(LC(LALT))
+
 /* left-hand HRMs */
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
@@ -56,24 +61,19 @@ ZMK_BEHAVIOR(slt, hold_tap,
     quick-tap-ms = <175>;                // repeat on tap-into-hold
     require-prior-idle-ms = <150>;
     bindings = <&mo>, <&sl>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
     hold-trigger-on-release;             // delay positional check until key-release
 )
-
-#define RHYPER (RS(RC(RA(LGUI))))
-#define LHYPER (LS(LC(LA(RGUI))))
-#define RMEH (RS(RC(RALT)))
-#define LMEH (LS(LC(LALT)))
 
 ZMK_LAYER(default,
 // ╭─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┬───────────────────────╮   ╭─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┬───────────────────────╮
       &tog SWERTY               &kp SE_Q                  &kp SE_W                  &kp SE_E                  &kp SE_R                  &kp SE_T                    &kp SE_Y                  &kp SE_U                  &kp SE_I                  &kp SE_O                  &kp SE_P                  &kp SE_CARET
 // ├─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────┤   ├─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────┤
-      &hml LMEH CAPSLOCK        &hml LGUI SE_A            &hml LALT SE_S            &hml LCTL SE_D            &hml LSFT SE_F            &hml LHYPER SE_G            &hml RHYPER SE_H          &hmr RSFT SE_J            &hmr LCTL SE_K            &hmr RALT SE_L            &hmr RGUI SE_APOS         &hmr RMEH SE_TILDE 
+      &kp CAPSLOCK              &hml LGUI SE_A            &hml LALT SE_S            &hml LCTL SE_D            &hml LSFT SE_F            &kp SE_G                    &kp SE_H                  &hmr RSFT SE_J            &hmr LCTL SE_K            &hmr RALT SE_L            &hmr RGUI SE_APOS         &kp SE_TILDE 
 // ├─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────┤   ├─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────┤
-      &none                     &kp SE_Z                  &kp SE_X                  &kp SE_C                  &kp SE_V                  &kp SE_B                    &kp SE_N                  &kp SE_M                  &kp SE_COMMA              &kp SE_DOT                &kp SE_MINUS              &kp SE_ACUTE 
+      &none                     &kp SE_Z                  &kp SE_X                  &hml LMEH SE_C            &hml LHYPER SE_V          &kp SE_B                    &kp SE_N                  &hmr RHYPER SE_M          &hmr RMEH SE_COMMA        &kp SE_DOT                &kp SE_MINUS              &kp SE_ACUTE 
 // ╰─────────────────────────┴─────────────────────────┴─────────────────────────┼─────────────────────────┼─────────────────────────┼───────────────────────╮   ╭─────────────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┴─────────────────────────┴───────────────────────╯
-                                                                                    &lt NAVIGATION ESC        &slt NUMBER FUNCTIONS     &kp BSPC                     &kp SPACE                 &lt SYMBOLS TAB         &lt SYMBOLS_2 ENTER              
+                                                                                    &lt NAVIGATION ESC        &slt NUMBER FUNCTIONS     &kp BSPC                    &kp SPACE                 &lt SYMBOLS TAB           &lt SYMBOLS_2 ENTER              
 //                                                                               ╰─────────────────────────┴─────────────────────────┴───────────────────────╯   ╰─────────────────────────┴─────────────────────────┴─────────────────────────╯
 )
 
